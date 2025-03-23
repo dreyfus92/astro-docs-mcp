@@ -1,0 +1,33 @@
+{
+  "name": "astro-docs-mcp",
+  "version": "0.1.0",
+  "description": "An MCP server for providing Astro documentation access to AI agents",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "astro-docs-mcp": "./bin/astro-docs-mcp"
+  },
+  "files": [
+    "build",
+    "bin",
+    "src"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "build": "node src/scripts/build.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js",
+    "start": "./bin/astro-docs-mcp",
+    "test": "node src/scripts/test-client.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "0.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  }
+}
