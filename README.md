@@ -41,6 +41,7 @@ This TypeScript-based MCP server implements a documentation retrieval system for
 - Node.js v16 or later is required
 - Node.js v20+ is recommended for best compatibility
 - The server uses ES modules syntax
+- pnpm package manager (preferred over npm)
 
 ## Installation
 
@@ -48,23 +49,23 @@ This TypeScript-based MCP server implements a documentation retrieval system for
 
 Install dependencies:
 ```bash
-npm install
+pnpm install
 ```
 
 Build the server:
 ```bash
-npm run build
+pnpm run build
 ```
 
 For development with auto-rebuild:
 ```bash
-npm run watch
+pnpm run watch
 ```
 
 ### Running the Server
 
 ```bash
-npm start
+pnpm start
 # OR directly
 ./bin/astro-docs-mcp
 ```
@@ -103,7 +104,7 @@ For example, if the repository is at `/Users/username/projects/astro-mcp`, the c
 Since MCP servers communicate over stdio, debugging can be challenging. We recommend using the [MCP Inspector](https://github.com/modelcontextprotocol/inspector), which is available as a package script:
 
 ```bash
-npm run inspector
+pnpm run inspector
 ```
 
 The Inspector will provide a URL to access debugging tools in your browser.
@@ -113,7 +114,7 @@ The Inspector will provide a URL to access debugging tools in your browser.
 A test client is provided to verify the server is working correctly:
 
 ```bash
-npm test
+pnpm test
 # OR directly
 node src/scripts/test-client.js
 ```
@@ -131,7 +132,7 @@ If you encounter issues with the server:
    - All scripts have executable permissions
 
 2. **"Module not found" errors**: If you see errors like `Cannot find module '/build/index.js'`, check:
-   - That you've run the build step (`npm run build`)
+   - That you've run the build step (`pnpm run build`)
    - That the script is being run from the correct directory
    - That absolute paths are being used for the script execution
 
