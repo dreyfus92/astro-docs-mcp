@@ -2,6 +2,10 @@
 
 An MCP server for providing Astro documentation access to AI agents. This server allows AI assistants to look up and reference Astro documentation when helping users with Astro-related tasks.
 
+<a href="https://glama.ai/mcp/servers/@dreyfus92/astro-docs-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@dreyfus92/astro-docs-mcp/badge" alt="Astro Docs Server MCP server" />
+</a>
+
 This TypeScript-based MCP server implements a documentation retrieval system for Astro. It demonstrates core MCP concepts by providing:
 
 - Resources representing Astro documentation sections with URIs and metadata
